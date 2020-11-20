@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+% Fullpage layout
+\usepackage{fullpage}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[small]{caption}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amstext}
+
+\usepackage{csquotes}
+\usepackage{enumerate}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{xspace} 
+\usepackage{mathtools}
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{../images/}}
+
+\usepackage{url}
+\usepackage{hyperref}
+\urlstyle{same}
+
+% Load after hyperref!
+\usepackage{cleveref}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newcommand{\alg}{{\normalfont\textsc{Alg}}}
+\newcommand{\opt}{{\normalfont\textsc{Opt}}}
+\newcommand{\M}{\mathcal{M}}
+
+\newcommand{\cons}{\alpha}
+\newcommand{\rob}{\beta}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newmdenv[%
+    backgroundcolor=red!8,
+    linecolor=red,
+    outerlinewidth=1pt,
+    skipabove=\baselineskip,
+    skipbelow=\baselineskip,
+]{notes}
+
+
+% Use libertine font
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+\title{Title}
+
+\author{
+Alexander Lindermayr
+}
+
+\begin{document}
+
+\maketitle
+
+\end{document}
