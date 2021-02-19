@@ -6,16 +6,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-\usepackage[small]{caption}
-
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{amstext}
 
+\usepackage{cite}
 \usepackage{csquotes}
-\usepackage{enumerate}
 \usepackage{mdframed}
 \usepackage{xcolor}
 \usepackage{xspace} 
@@ -23,7 +21,10 @@
 \usepackage{todonotes}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\graphicspath{{../images/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
 
 \usepackage{url}
 \usepackage{hyperref}
@@ -32,6 +33,12 @@
 % Load after hyperref!
 \usepackage{cleveref}
 
+% Use libertine font
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{microtype}
+
+% Math stuff
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
@@ -46,27 +53,19 @@
 
 \newcommand{\alg}{{\normalfont\textsc{Alg}}}
 \newcommand{\opt}{{\normalfont\textsc{Opt}}}
-\newcommand{\M}{\mathcal{M}}
 
-\newcommand{\cons}{\alpha}
-\newcommand{\rob}{\beta}
+%% commenting tools
+\usepackage[colorinlistoftodos,prependcaption,textsize=scriptsize]{todonotes}
+\newcommand{\alex}[1]{\todo[linecolor=orange,backgroundcolor=orange!25,bordercolor=orange]{A:~#1}}
 
-\makeatletter
-\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
-\makeatother
-
-\newmdenv[%
-    backgroundcolor=red!8,
-    linecolor=red,
-    outerlinewidth=1pt,
-    skipabove=\baselineskip,
-    skipbelow=\baselineskip,
-]{notes}
+\newcommand{\anew}[1]{{\color{orange}#1}}
 
 
 % Use libertine font
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
+
+\bibliographystyle{plainurl}
 
 \title{Title}
 
